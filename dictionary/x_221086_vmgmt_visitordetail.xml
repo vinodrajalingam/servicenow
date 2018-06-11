@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="VisitorDetail" max_length="40" name="x_221086_vmgmt_visitordetail" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Address" max_length="200" name="address" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Current Organisation" max_length="40" name="current_organisation" read_only="true" type="string"/>
-        <element label="Date of Birth" max_length="40" name="dob" read_only="true" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="EMail ID" max_length="100" name="email_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="200" name="address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Current Organisation" max_length="40" name="current_organisation" type="string"/>
+        <element label="Date of Birth" max_length="40" name="dob" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="EMail ID" max_length="100" name="email_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Enter Email ID" mandatory="true" max_length="40" name="email_to_check" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="first_name" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" max_length="40" name="gender" read_only="true" type="string">
+        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" max_length="40" name="gender" type="string">
             <choice>
                 <element label="Male" sequence="0" value="male"/>
                 <element label="Female" sequence="1" value="female"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Last_Name" max_length="40" name="last_name" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last_Name" max_length="40" name="last_name" type="string"/>
     </element>
 </database>
