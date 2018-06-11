@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="VisitorEntry" max_length="40" name="x_221086_vmgmt_visitorentry" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="EMail ID" mandatory="true" max_length="40" name="email_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First_Name" mandatory="true" max_length="40" name="first_name" type="string"/>
+        <element label="In Time" mandatory="true" max_length="40" name="in_time" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Last_Name" mandatory="true" max_length="40" name="last_name" type="string"/>
+        <element label="Out Time" mandatory="true" max_length="40" name="out_time" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Purpose of Visit" mandatory="true" max_length="40" name="purpose_of_visit" type="string"/>
+    </element>
+</database>

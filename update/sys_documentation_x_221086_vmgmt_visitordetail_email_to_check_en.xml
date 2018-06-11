@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="email_to_check" label="Enter Email ID" language="en" table="x_221086_vmgmt_visitordetail">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>email_to_check</element>
+            <help/>
+            <hint/>
+            <label>Enter Email ID</label>
+            <language>en</language>
+            <name>x_221086_vmgmt_visitordetail</name>
+            <plural>Enter Email IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-11 07:45:14</sys_created_on>
+            <sys_id>1bab36724f229300eccb417da310c7a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Enter Email ID</sys_name>
+            <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
+            <sys_update_name>sys_documentation_x_221086_vmgmt_visitordetail_email_to_check_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-11 07:45:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
