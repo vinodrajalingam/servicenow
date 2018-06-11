@@ -28,13 +28,13 @@ gs.info(current.email_to_check);
 myTable.addQuery('email_id',current.email_to_check);
 myTable.query();
 if(myTable.next()) {	
-	current.first_name = 	myTable.first_name.getDisplayValue();
-	current.last_name = 	myTable.last_name.getDisplayValue();
-	current.email_id = 		myTable.email_id.getDisplayValue();
-	current.dob = 			myTable.dob.getDisplayValue();
-	current.gender = 		myTable.gender.getDisplayValue();
-	current.address = 		myTable.address.getDisplayValue();
-	current.current_organisation = 		myTable.current_organisation.getDisplayValue();
+	current.first_name  = 	myTable.first_name.getDisplayValue();
+	current.last_name   = 	myTable.last_name.getDisplayValue();
+	current.email_id    = 	myTable.email_id.getDisplayValue();
+	current.dob         = 	myTable.dob.getDisplayValue();
+	current.gender      = 	myTable.gender.getDisplayValue();
+	current.address     =   myTable.address.getDisplayValue();
+	current.current_organisation   =  myTable.current_organisation.getDisplayValue();
 	current.setAbortAction(true);
 
 }else {
@@ -53,7 +53,7 @@ if(myTable.next()) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6801a73a4f629300eccb417da310c706</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CheckMailAvailability</sys_name>
         <sys_overrides/>
         <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
@@ -61,7 +61,7 @@ if(myTable.next()) {
         <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
         <sys_update_name>sys_ui_action_6801a73a4f629300eccb417da310c706</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 11:17:53</sys_updated_on>
+        <sys_updated_on>2018-06-11 11:47:25</sys_updated_on>
         <table>x_221086_vmgmt_visitordetail</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

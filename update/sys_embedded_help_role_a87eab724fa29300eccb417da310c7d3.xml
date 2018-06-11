@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="treemap_user" name="treemap_user">72e009319f21020034c6b6a0942e709d</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-06-11 11:27:03</sys_created_on>
+        <sys_id>a87eab724fa29300eccb417da310c7d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>72e009319f21020034c6b6a0942e709d</sys_name>
+        <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
+        <sys_update_name>sys_embedded_help_role_a87eab724fa29300eccb417da310c7d3</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-06-11 11:27:03</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

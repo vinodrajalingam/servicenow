@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="email_to_check" table="x_221086_vmgmt_visitordetail">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_email" table="x_221086_vmgmt_importvisitorentrydatacsv">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes>import_attribute_name=EMail,edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Enter Email ID</column_label>
+        <column_label>EMail</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -23,15 +23,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>email_to_check</element>
+        <element>u_email</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_221086_vmgmt_visitordetail</name>
+        <name>x_221086_vmgmt_importvisitorentrydatacsv</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -48,16 +48,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 07:45:14</sys_created_on>
-        <sys_id>ec6eeb724fa29300eccb417da310c79b</sys_id>
+        <sys_created_on>2018-06-11 11:57:13</sys_created_on>
+        <sys_id>9a55bb3a4fa29300eccb417da310c734</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Enter Email ID</sys_name>
+        <sys_name>EMail</sys_name>
         <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
         <sys_policy/>
         <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
-        <sys_update_name>sys_dictionary_x_221086_vmgmt_visitordetail_email_to_check</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-06-11 11:26:48</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_221086_vmgmt_importvisitorentrydatacsv_u_email</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-11 11:57:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
