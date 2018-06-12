@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="ImportVisitorEntryDataCSVTransform">95853f3a4fa29300eccb417da310c768</map>
+        <map display_value="VisitorsLoadDataTransform">6a243b0f4f221300eccb417da310c706</map>
         <reference_value_field/>
         <source_field>u_intime</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {
@@ -15,19 +15,19 @@
 	return ""; // return the value to be put into the target field
 
 })(source);]]></source_script>
-        <source_table>x_221086_vmgmt_importvisitorentrydatacsv</source_table>
+        <source_table>x_221086_vmgmt_visitorsloaddata</source_table>
         <sys_class_name>sys_transform_entry</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-11 12:02:12</sys_created_on>
-        <sys_id>af763f3a4fa29300eccb417da310c774</sys_id>
+        <sys_created_on>2018-06-12 06:31:43</sys_created_on>
+        <sys_id>58747b0f4f221300eccb417da310c74d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>u_intime</sys_name>
         <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
         <sys_policy/>
         <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
-        <sys_update_name>sys_transform_entry_af763f3a4fa29300eccb417da310c774</sys_update_name>
+        <sys_update_name>sys_transform_entry_58747b0f4f221300eccb417da310c74d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-11 12:02:12</sys_updated_on>
+        <sys_updated_on>2018-06-12 06:31:43</sys_updated_on>
         <target_field>in_time</target_field>
         <target_table>x_221086_vmgmt_visitorentry</target_table>
         <use_source_script>false</use_source_script>

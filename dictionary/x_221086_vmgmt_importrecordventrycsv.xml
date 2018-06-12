@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="ImportRecordVEntryCSV" max_length="40" name="x_221086_vmgmt_importrecordventrycsv" type="collection">
+        <element attributes="import_attribute_name=EMail,edge_encryption_enabled=true" label="EMail" max_length="40" name="u_email" type="string"/>
+        <element attributes="import_attribute_name=InTime" label="InTime" max_length="40" name="u_intime" type="glide_date_time"/>
+        <element attributes="import_attribute_name=OutTime" label="OutTime" max_length="40" name="u_outtime" type="glide_date_time"/>
+        <element attributes="import_attribute_name=PurposeOfVisit,edge_encryption_enabled=true" label="PurposeOfVisit" max_length="40" name="u_purposeofvisit" type="string"/>
+    </element>
+</database>
