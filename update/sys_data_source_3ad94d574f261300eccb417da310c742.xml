@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>jdbc:mysql://:3306/epro</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name>epro</database_name>
+        <database_port>3306</database_port>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>org.mariadb.jdbc.Driver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label/>
+        <import_set_table_name>x_221086_vmgmt_visitordataimportdb</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>Z0USr6qmbAd7MaSa+EyjGA==</jdbc_password>
+        <jdbc_server/>
+        <jdbc_user_name>root</jdbc_user_name>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="vmmidserver">9d9176954f9a1300eccb417da310c7ea</mid_server>
+        <name>VisitorDataImportDB</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-12 12:51:19</sys_created_on>
+        <sys_id>3ad94d574f261300eccb417da310c742</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VisitorDataImportDB</sys_name>
+        <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
+        <sys_update_name>sys_data_source_3ad94d574f261300eccb417da310c742</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-12 12:51:19</sys_updated_on>
+        <table_name>visitorsentry</table_name>
+        <type>JDBC</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

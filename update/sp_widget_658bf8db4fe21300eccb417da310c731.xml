@@ -2,12 +2,103 @@
 <record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function() {
-  /* widget controller */
-  var c = this;
+        <client_script><![CDATA[function(spUtil, $scope, $timeout) {
+
+      /* widget controller */
+
+      var c = this;
+
+      $scope.incidata = {};
+
+      $scope.incidata.changed = false;
+
+      spUtil.recordWatch($scope, "x_221086_vmgmt_visitorentry", "", function(name, data) {
+
+      console.log(data); //comes back as undefined  
+
+      console.log(name);
+
+      $scope.incidata.changedRecord = name.data; // name.data has the updated or inserted record info
+
+              c.server.update();
+
+              $timeout(function() {
+
+                      $scope.changeBg();
+
+              }, 500);  
+
+      });
+
+      $scope.changeBg = function() {
+
+              $scope.incidata.changed = true;
+
+              $timeout(function() {
+
+                      $scope.incidata.changed = false;
+
+              }, 500);
+
+      }
+
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>.critical-incidents {
+
+      margin-top: 20px;
+
+      width: 300px;
+
+      .inci-number {
+
+              font-size: 36px;
+
+              margin-bottom: 0px;
+
+              padding: 25px;
+
+              color: #E51B24;
+
+      }
+
+      .circle-bg {
+
+              margin-left: auto;
+
+              margin-right: auto;
+
+              width: 100px;
+
+              height: 100px;
+
+              border-radius: 50%;
+
+              background: #fff;
+
+      }
+
+      .red-bg {
+
+              background: #E51B24;
+
+              .inci-number {
+
+                      color: #fff;
+
+              }
+
+      }
+
+}
+
+.changed-rec {
+
+      font-size: 18px;
+
+      margin-top: 30px;
+
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -24,6 +115,14 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
+	
+			data.incidentCount = '';
+
+      var gr = new GlideRecord('x_221086_vmgmt_visitorentry');
+
+      gr.query();
+
+      data.incidentCount = gr.getRowCount();
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -31,16 +130,38 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-12 11:42:58</sys_created_on>
         <sys_id>658bf8db4fe21300eccb417da310c731</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>VisitorRealTime</sys_name>
         <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
         <sys_policy/>
         <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
         <sys_update_name>sp_widget_658bf8db4fe21300eccb417da310c731</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-12 11:42:58</sys_updated_on>
-        <template><![CDATA[<div>
-<!-- your widget template -->
+        <sys_updated_on>2018-06-12 12:11:50</sys_updated_on>
+        <template><![CDATA[<div class="critical-incidents col-md-2">
+
+      <div class="panel panel-default">
+
+              <div class="panel-heading">Number of Critical Incidents</div>
+
+              <div class="panel-body text-center">
+
+                      <div class="circle-bg" ng-class="{'red-bg' : incidata.changed}">
+
+                              <p class="inci-number"> {{c.data.incidentCount}}</p>
+
+                      </div>
+
+              </div>
+
+      </div>
+
+</div>
+
+<div class="col-md-9 ">
+
+  <p class="changed-rec">Changed Record {{incidata.changedRecord.display_value}}</p>
+
 </div>]]></template>
     </sp_widget>
 </record_update>
