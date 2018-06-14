@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="OnlineLDAPServer/Users" max_length="40" name="ldap_import" type="collection">
+        <element attributes="import_attribute_name=dn,edge_encryption_enabled=true" label="dn" max_length="255" name="u_dn" type="string"/>
+        <element attributes="import_attribute_name=source,edge_encryption_enabled=true" label="source" max_length="255" name="u_source" type="string"/>
+    </element>
+</database>

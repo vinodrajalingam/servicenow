@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="LdapUserDS" max_length="40" name="x_221086_vmgmt_ldapuserdsimportset" type="collection">
+        <element attributes="import_attribute_name=dn,edge_encryption_enabled=true" label="dn" max_length="255" name="u_dn" type="string"/>
+        <element attributes="import_attribute_name=source,edge_encryption_enabled=true" label="source" max_length="255" name="u_source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="uid" max_length="40" name="u_uid" type="string"/>
+    </element>
+</database>

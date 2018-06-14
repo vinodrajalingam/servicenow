@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="ldap_server_url">
+    <ldap_server_url action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <operational_status>false</operational_status>
+        <order>100</order>
+        <server/>
+        <sys_class_name>ldap_server_url</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-14 11:59:30</sys_created_on>
+        <sys_id>45a2d37f4f221300eccb417da310c7b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ldap://ec2-18-218-140-60.us-east-2.compute.amazonaws.com:389/</sys_name>
+        <sys_package display_value="VisitorManagement" source="x_221086_vmgmt">adc6fa3e4fee5300eccb417da310c7d8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VisitorManagement">adc6fa3e4fee5300eccb417da310c7d8</sys_scope>
+        <sys_update_name>ldap_server_url_45a2d37f4f221300eccb417da310c7b0</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-06-14 12:10:19</sys_updated_on>
+        <url>ldap://ec2-18-218-140-60.us-east-2.compute.amazonaws.com:389/</url>
+    </ldap_server_url>
+</record_update>
